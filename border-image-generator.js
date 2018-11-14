@@ -115,9 +115,6 @@ $(document).ready(function() {
             borderWidthStr = joinValues(borderWidth, "px ") + "px";
             style = "border-style: solid;\n"
                 + "border-width: " + borderWidthStr + ";\n"
-                + "-moz-border-image: " + borderImage + repeatStr + ";\n"
-                + "-webkit-border-image: " + borderImage + repeatStr + ";\n"
-                + "-o-border-image: " + borderImage + repeatStr + ";\n"
                 + "border-image: " + borderImage + fillStr + repeatStr + ";\n";
 
             borderImage = "url(" + UserImageCache.getSrc() + ") " + joinValues(imageOffset);
@@ -125,9 +122,6 @@ $(document).ready(function() {
 
         $("#cssEl").html(style)
                 .css("border-width", borderWidthStr)
-                .css("-moz-border-image", borderImage + repeatStr)
-                .css("-webkit-border-image", borderImage + repeatStr)
-                .css("-o-border-image", borderImage + repeatStr)
                 .css("border-image", borderImage + fillStr + repeatStr);
     }
 
