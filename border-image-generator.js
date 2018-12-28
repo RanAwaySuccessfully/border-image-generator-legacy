@@ -16,7 +16,7 @@ $(document).ready(function() {
         naturalSize = {},
 
         state = {
-            src: "http://www.w3.org/TR/css3-background/border.png",
+            src: "/border.png",
 
             linkBorder: true,
             borderWidth: [0, 0, 0, 0],
