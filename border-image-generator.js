@@ -16,7 +16,7 @@ $(document).ready(function() {
         naturalSize = {},
 
         state = {
-            src: "/border.png",
+            src: "https://ranawaysuccessfully.github.io/border.png",
 
             linkBorder: true,
             borderWidth: [0, 0, 0, 0],
