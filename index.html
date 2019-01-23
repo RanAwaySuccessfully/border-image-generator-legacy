@@ -3,14 +3,23 @@
  Copyright (c) 2010 Kevin Decker (http://www.incaseofstairs.com/)
  See LICENSE for license information
 -->
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>border-image-generator</title>
-    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/themes/ui-darkness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/themes/ui-lightness/jquery-ui.css" id="lightnessStyle">
-    <link rel="stylesheet" type="text/css" href="css/border-image-generator.css">
-    <link rel="stylesheet" type="text/css" href="css/border-image-generator-standalone.css">
+  <title>border-image-generator</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="lib/jquery-ui-darkness.css">
+  <link rel="stylesheet" href="lib/jquery-ui-lightness.css" id="lightnessStyle">
+  <link rel="stylesheet" href="css/border-image-generator.css">
+  <link rel="stylesheet" href="css/border-image-generator-standalone.css">
+  <script src="lib/json2.js" defer></script>
+  <script src="lib/jquery.min.js" defer></script>
+  <script src="lib/jquery-ui.min.js" defer></script>
+  <script src="lib/jquery.ui.resizable.min.js" defer></script>
+  <script src="lib/user-image-cache.js" defer></script>
+  <script src="history-handler.js" defer></script>
+  <script src="expander.js" defer></script>
+  <script src="border-image-generator.js" defer></script>
 </head>
 <body class="borderGenerator no-local">
     <div class="wrapper">
@@ -65,13 +74,13 @@
                 <a href="#">Border Repeat</a>
             </div>
             <div id="repeatOptions" class="setupSection" style="display: none">
-                <!-- SPEC: The spec also defined a Space option, but no browser currently supports this so leaving this out... -->
                 <div>
                     <label for="repeatVertical">Vertical Repeat:</label>
                     <select id="repeatVertical" class="repeat">
                         <option value="stretch">Stretch</option>
                         <option value="repeat">Repeat</option>
                         <option value="round">Round</option>
+                        <option value="space">Space</option>
                     </select>
                     <span id="warnRepeatVert" class="warning"></span>
                 </div>
@@ -81,6 +90,7 @@
                         <option value="stretch">Stretch</option>
                         <option value="repeat">Repeat</option>
                         <option value="round">Round</option>
+                        <option value="space">Space</option>
                     </select>
                 </div>
             </div>
@@ -93,25 +103,12 @@
     </div>
 
     <div class="footer">
-            <a href="http://www.incaseofstairs.com/">incaseofstairs</a>
-	    |
-            <a href="http://twitter.com/kpdecker">@kpdecker</a>
-	    |
-            <a href="http://gradient-scanner.com">gradient-scanner</a>
-            |
-            <a href="http://github.com/kpdecker/border-image-generator">border-image-generator @ github</a><br><br>
-            THIS IS A TEMPORARY UNOFFICIAL FORK MAINTAINED AT THIS <a href="https://github.com/RanAwaySuccessfully/border-image-generator">GITHUB ADDRESS</a><br>
-            THE MAIN WEBSITE IS CURRENTLY OFFLINE FOR UNKNOWN REASONS
+            original author: <a href="https://twitter.com/kpdecker">@kpdecker</a> | 
+            <a href="http://incaseofstairs.com/">incaseofstairs</a> |
+            <a href="http://github.com/kpdecker/border-image-generator">Legacy GitHub Repository</a><br><br>
+            This is currently being maintained by RanAwaySuccessfully at <a href="https://github.com/RanAwaySuccessfully/border-image-generator-legacy">this GitHub address.</a><br>
+            For an updated version of this tool, not endorsed by the original author, please check out <a href="https://ranawaysuccessfully.github.io/border-image-generator/index">this page.</a>
     </div>
     </div>
-
-    <script type="text/javascript" src="lib/json2.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="lib/jquery.ui.resizable.min.js"></script>
-    <script type="text/javascript" src="lib/user-image-cache/user-image-cache.js"></script>
-    <script type="text/javascript" src="history-handler.js"></script>
-    <script type="text/javascript" src="expander.js"></script>
-    <script type="text/javascript" src="border-image-generator.js"></script>
 </body>
 </html>

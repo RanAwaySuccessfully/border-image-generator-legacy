@@ -8,6 +8,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
+a:hover {text-decoration: underline;}
 
 body.borderGenerator {
   background-color: #83ADC8;
